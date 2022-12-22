@@ -248,12 +248,12 @@ pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]:
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
 		os pares devem ser trocados;
-pares 8-9• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
 		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
 		os pares devem ser trocados;
-pares 9-10• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
 		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
@@ -282,7 +282,7 @@ pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]:
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
 		os pares devem ser trocados;
-pares 5-6• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
 		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
@@ -297,7 +297,7 @@ pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]:
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
 		os pares devem ser trocados;
-pares 8-9• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
 		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
 		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
 		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
