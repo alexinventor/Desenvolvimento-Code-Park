@@ -1,0 +1,459 @@
+﻿DESENVOLVIMENTO 15
+Autor: Alex Barros
+Data: 22/12/2022
+
+Instruções do projeto
+
+Construa um algoritmo de ordenação, utilizando o método bubble sort estudado. 
+(Lembre-se que se trata de uma série de instruções que devem ser seguidas passo a passo).
+Para isso, você deve criar um método em que o tamanho do vetor seja dez e deve estar em ordem crescente.
+
+O vetor deverá:
+- comparar seus elementos dois a dois adjacentes;
+- se os elementos não estiverem em ordem, então ordenar;
+- senão, avançar para o próximo par;
+- repetir a operação até que nenhuma troca possa ser feita no vetor inteiro.
+
+ALGORITMO:    
+1ª verificação:
+pares 1 e 2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 > n2 = Falso, n1 é menor que n2. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 > n2 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2 e 3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 > n3 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 > n3 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 3 e 4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 > n4 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 > n4 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4 e 5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 > n5 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 > n5 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5 e 6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 > n6 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 > n6 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6 e 7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n7 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n7 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7 e 8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8 e 9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9 e 10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n10 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente 
+até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+2ª verificação:
+pares 1 e 2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 > n1 ou n2 ou n3 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 > n1 ou n2 ou n3 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2 e 3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 > n1 ou n2 ou n3 ou n4 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 > n1 ou n2 ou n3 ou n4 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3 e 4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4 e 5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5 e 6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6 e 7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7 e 8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8 e 9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9 e 10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+3ª verificação:
+pares 1 e 2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 > n1 ou n2 ou n3 ou n4 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 > n1 ou n2 ou n3 ou n4 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+4ª verificação:
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 > n1 ou n2 ou n3 ou n4 ou n5 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+5ª verificação:	
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 ou n5 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+6ª verificação:	
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+7ª verificação:	
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+8ª verificação:	
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+Ao final, se os números ainda não estão ordenados, se retorna para o início e realiza o método novamente até que fique completamente ordenado.
+
+O processo se repete, pois os números ainda não estão ordenados.
+9ª verificação:	
+pares 1-2	• Comparando os dois primeiros [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, como se pede em ordem crescente, a disposição dos números permanece a mesma.
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados para ordenar de forma crescente;
+pares 2-3	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 3-4	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 4-5	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 5-6	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 6-7	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 7-8	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 8-9	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+pares 9-10	• O próximo par do vetor [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]: 
+		n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Falso. 
+		Portanto, seguindo a mesma lógica das análises anteriores, a ordem permanece. 
+		Se, n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 > n1 ou n2 ou n3 ou n4 ou n5 ou n6 ou n7 ou n8 ou n9 ou n10 = Verdadeiro, 
+		os pares devem ser trocados;
+
+Assim, chegamos ao final e obtemos os números organizados em ordem crescente.
+
