@@ -1,0 +1,84 @@
+﻿DESENVOLVIMENTO 16
+Autor: Alex Barros
+Data: 28/12/2022
+
+Instruções do projeto
+
+Faça um algoritmo de ordenação utilizando o método insertion sort.
+Crie um método que execute as seguintes operações:
+
+- Tamanho do vetor: 30;
+- Utilize números ímpares;
+- Opere em ordem crescente.
+
+ALGORITMO:
+
+[19,11,23,5,45,13,9,27,21,3,33,41,17,53,49,51,37,7,25,63,79,85,29,91,71,83,15,59,67,75]
+    • Comparando os dois primeiros números [19,11,...] temos: 19 > 11 = Verdadeiro. Neste caso, é feita uma busca entre todos os números à esquerda do 19 
+para verificar se o 11 é maior que os demais elementos. Porém, como o único elemento é o 19, a disposição dos pares é trocada para que fiquem em ordem crescente.
+    • Seguindo, o próximo par do vetor [11,19,23,...] é: 19 > 23 = Falso. 19 é menor que 23, portanto, como se pede em ordem crescente, a disposição dos números 
+permanece a mesma  [11,19,23,...];
+Assim, o próximo par de  [11,19,23,5,...] é: 23 > 5 = verdadeiro. Nesse caso, uma busca é realizada entre todos os números à esquerda do 23 para verificar 
+se o 5 é maior que os demais elementos. Como os outros elementos à esquerda do 23 são maiores que o 5, ele é inserido no início do vetor;
+O próximo par de [5,11,19,23,45,...] é: 23 > 45 = Falso. 23 é menor que 45, a disposição dos números permanece a mesma;
+O próximo par de [5,11,19,23,45,13,...] é: 45 > 13 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 para verificar 
+se o número 13 é maior que os outros elementos. Os elementos à esquerda do 45, que não são maiores que 13, são o 5 e o 11, logo, o valor 13 é inserido após o 11;
+O próximo par de [5,11,13,19,23,45,9,...] é: 45 > 9 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 para verificar 
+se o número 9 é maior que os outros elementos. O único elemento à esquerda do 45, que não é maior que 9, é o 5, logo, o valor 9 é inserido após o 5;
+O próximo par de [5,9,11,13,19,23,45,27,...] é: 45 > 27 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 para 
+verificar se o número 27 é maior que os outros elementos. Os elementos à esquerda do 45, que não são maiores que 27, são o 5,9,11,13,19 e o 23, logo, o valor 27 é 
+inserido após o 23;
+O próximo par de [5,9,11,13,19,23,27,45,21,...] é: 45 > 21 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 para 
+verificar se o número 21 é maior que os outros elementos. Os elementos à esquerda do 45, que não são maiores que 21, são o 5,9,11,13 e o 19, logo, o valor 21 é 
+inserido após o 19;
+O próximo par de [5,9,11,13,19,21,23,27,45,3,...] é: 45 > 3 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 para 
+verificar se o número 3 é maior que os outros elementos. Todos os elementos à esquerda do 45, são maiores que 3, logo, o valor 3 é inserido no início;
+O próximo par de [3,5,9,11,13,19,21,23,27,45,33,...] é: 45 > 33 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 
+para verificar se o número 33 é maior que os outros elementos. Todos os elementos à esquerda do 45, são menores que 33, logo, o valor 33 é inserido antes do 45;
+O próximo par de [3,5,9,11,13,19,21,23,27,33,45,41,...] é: 45 > 41 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 
+para verificar se o número 41 é maior que os outros elementos. Todos os elementos à esquerda do 45, são menores que 41, logo, o valor 41 é inserido antes do 45;
+O próximo par de [3,5,9,11,13,19,21,23,27,33,41,45,17,...] é: 45 > 17 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à esquerda do 45 
+para verificar se o número 17 é maior que os outros elementos. Os elementos à esquerda do 45, que não são maiores que 17, são o 3,5,9,11 e o 13, logo, o valor 17 é 
+inserido após o 13;
+O próximo par de [3,5,9,11,13,17,19,21,23,27,33,41,45,53,...] é: 45 > 53 = Falso. 45 é menor que 53, a disposição dos números permanece a mesma;
+O próximo par de [3,5,9,11,13,17,19,21,23,27,33,41,45,53,49,...] é: 53 > 49 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os números à esquerda do 53 
+para verificar se o número 49 é maior que os outros elementos. Todos os elementos à esquerda do 53, são menores que 49, logo, o valor 49 é inserido antes do 53;
+O próximo par de [3,5,9,11,13,17,19,21,23,27,33,41,45,49,53,51,...] é: 53 > 51 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os números à esquerda do 53 
+para verificar se o número 51 é maior que os outros elementos. Todos os elementos à esquerda do 53, são menores que 51, logo, o valor 51 é inserido antes do 53;
+O próximo par de [3,5,9,11,13,17,19,21,23,27,33,41,45,49,51,53,37,...] é: 53 > 37 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os números à esquerda do 
+53 para verificar se o número 37 é maior que os outros elementos. Os elementos à esquerda do 53, que não são maiores que 37, são o 3,5,9,11,13,17,19,21,23,27 e o 33, 
+logo, o valor 37 é inserido após o 33;
+O próximo par de [3,5,9,11,13,17,19,21,23,27,33,37,41,45,49,51,53,7,...] é: 53 > 7 = Verdadeiro. Nesse caso, novamente, uma busca é realizada entre todos os números à 
+esquerda do 53 para verificar se o número 7 é maior que os outros elementos. Os elementos à esquerda do 53, que não são maiores que 7, são o 3 e o 5, logo, o valor 7 
+é inserido após o 5;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,27,33,37,41,45,49,51,53,25,...] é: 53 > 25 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os números à esquerda 
+do 53 para verificar se o número 25 é maior que os outros elementos. Os elementos à esquerda do 53, que não são maiores que 25, são o 3,5,9,11,13,17,19,21 e o 23, logo, 
+o valor 25 é inserido após o 23;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,33,37,41,45,49,51,53,63,...] é: 53 > 63 = Falso. 53 é menor que 63, a disposição dos números permanece a mesma;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,33,37,41,45,49,51,53,63,79,...] é: 63 > 79 = Falso. 63 é menor que 79, a disposição dos números permanece a mesma;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,33,37,41,45,49,51,53,63,79,85,...] é: 79 > 85 = Falso. 79 é menor que 85, a disposição dos números permanece a mesma;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,33,37,41,45,49,51,53,63,79,85,29,...] é: 85 > 29 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os 
+números à esquerda do 85 para verificar se o número 29 é maior que os outros elementos. Os elementos à esquerda do 85, que não são maiores que 29, são 
+o 3,5,9,11,13,17,19,21,23,25 e o 27, logo, o valor 29 é inserido após o 27;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,79,85,91,...] é: 85 > 91 = Falso. 85 é menor que 91, a disposição dos números permanece 
+a mesma;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,79,85,91,71,...] é: 91 > 71 = Verdadeiro. Nesse caso, uma busca é realizada entre todos os 
+números à esquerda do 91 para verificar se o número 71 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 71, são 
+o 3,5,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53 e o 63, logo, o valor 71 é inserido após o 63;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,71,79,85,91,83,...] é: 91 > 83 = Verdadeiro. Nesse caso, uma busca é realizada entre todos 
+os números à esquerda do 91 para verificar se o número 83 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 83, são 
+o 3,5,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,71 e o 79, logo, o valor 83 é inserido após o 79;
+O próximo par de [3,5,7,9,11,13,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,71,79,83,85,91,15,...] é: 91 > 15 = Verdadeiro. Nesse caso, uma busca é realizada entre 
+todos os números à esquerda do 91 para verificar se o número 15 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 15, são 
+o 3,5,9,11 e o 13, logo, o valor 15 é inserido após o 13;
+O próximo par de [3,5,7,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,63,71,79,83,85,91,59,...] é: 91 > 59 = Verdadeiro. Nesse caso, uma busca é realizada entre 
+todos os números à esquerda do 91 para verificar se o número 59 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 59, são 
+o 3,5,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51 e o 53, logo, o valor 59 é inserido após o 53;
+O próximo par de [3,5,7,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,59,63,71,79,83,85,91,67,...] é: 91 > 67 = Verdadeiro. Nesse caso, uma busca é realizada 
+entre todos os números à esquerda do 91 para verificar se o número 67 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 67, são 
+o 3,5,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,59 e o 63, logo, o valor 67 é inserido após o 63;
+O próximo par de [3,5,7,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,59,63,67,71,79,83,85,91,75] é: 91 > 75 = Verdadeiro. Nesse caso, uma busca é realizada 
+entre todos os números à esquerda do 91 para verificar se o número 75 é maior que os outros elementos. Os elementos à esquerda do 91, que não são maiores que 75, são 
+o 3,5,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,59,63,67 e o 71, logo, o valor 75 é inserido após o 71;
+Assim, temos [3,5,7,9,11,13,15,17,19,21,23,25,27,29,33,37,41,45,49,51,53,59,63,67,71,75,79,83,85,91], ou seja, finalizamos com os números organizados em ordem crescente.
+
