@@ -1,0 +1,21 @@
+DESENVOLVIMENTO 17
+Autor: Alex Barros
+Data: 01/01/2023
+
+Instruções do projeto
+
+Crie um vetor com ponteiros utilizando alocação dinâmica na linguagem C, que:
+
+- use a função realloc;
+- use a função sizeof;
+- que tenha tamanho 22 de vetor;
+- depois libere o bloco utilizando a função free.
+
+Algoritmo:
+
+int*ponteiro_vetor;
+ponteiro_vetor = (int*) malloc(11 * sizeof (int));
+
+ponteiro_vetor = (int *) realloc(ponteiro_vetor, 22 * sizeof (int));
+
+free(): void free(void *ponteiro_vetor);
