@@ -1,0 +1,31 @@
+Desenvolvimento 19
+Pesquisa: Alex Barros
+Data: 09/01/2023
+
+Instruções do projeto: 
+Pesquise sobre os grafos e apresente dois exemplos de como 
+são utilizados no contexto tecnológico.
+
+Resultado da Pesquisa:
+'Roteiros de Turismo Modelados como Grafo.
+Exemplo do Roteiro de Turismo de Visita às Cidades:
+Em um planejamento para visitar as principais cidades de uma região turística, 
+uma pessoa pode estar interessada em saber qual é o caminho mais curto para 
+realizar o roteiro.
+Neste caso, os objetos são as cidades e as conexões são as distâncias 
+entre as cidades.'
+
+'Aplicações de Candidatos a Empregos Modelados como Grafo.
+Exemplo de Aplicações de Candidatos a Empregos:
+Pessoas aplicam (i.e. se candidatam) para vagas de empregos em 
+instituições altamente seletivas.
+Neste caso, os nós do grafo são as pessoas e as vagas de emprego 
+pretendidas nas instituições.
+As conexões são as aplicações das pessoas às vagas.
+Existem algoritmos em grafos para descobrir o melhor casamento 
+(do inglês matching) entre pessoas candidatas e as vagas de emprego 
+disponíveis.'
+
+Fonte: Grafos – Parte 1 Projeto e Análise de Algoritmos Aline Vasconcelos.
+Publicou Lorena Espada. https://slideplayer.com.br/slide/356355/. Acessado
+em: 09 de Janeiro de 2023.
