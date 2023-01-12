@@ -1,0 +1,74 @@
+
+Desenvolvimento 21
+Autor: Alex Barros
+Data: 12/01/2023
+
+Instruções do projeto 
+Classifique dois objetos materiais e dois abstratos. 
+Insira, no mínimo, três métodos e três atributos para cada.
+
+#Objetos materiais:
+
+Objeto: Celular
+
+Atributos:
+Modelo
+Fabricante
+Cor
+Dimensões
+Peso
+Ligado
+
+Métodos:
+Ligar
+Fazer chamadas
+Enviar mensagens
+Visualizar e-mail
+Assistir videos
+Ouvir músicas
+
+Objeto: Ventilador
+
+Atributos:
+Cor
+Potência
+Número de Velocidades
+Diâmetro da Hélice
+
+Métodos:
+Ligar
+Aumentar velocidade
+Inclinar vertical
+Acionamento para girar
+Diminuir velocidade
+
+#Objetos abstratos:
+
+Objeto: Conta
+
+Atributos:
+Tipo
+Número
+Nome do Correntista
+Data de Abertura
+Agência
+
+Métodos:
+Ver Saldo
+Ver Extrato
+Depositar
+Sacar
+Investir
+
+Objeto: Animal
+
+Atributos:
+Espécie
+Raça
+Habitat
+Alimento
+
+Métodos:
+Emitir som
+Reproduzir
+Movimentar
