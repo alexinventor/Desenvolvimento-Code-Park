@@ -1,0 +1,29 @@
+
+Desenvolvimento 24
+Autor: Alex Barros
+Data: 18/01/2023
+
+Instruções do projeto
+Crie dois pacotes baseados nas atribuições de uma empresa e 
+inclua classes neles. Lembre-se de trabalhar com os padrões Java.
+
+Pacotes:
+
+package br.com.minha_loja
+
+public class produtos{
+    String item;
+    int valor;
+}
+
+
+
+package net.primevideo
+
+public class videos{
+    String filmes;
+    String lancamento;
+}
+
+
+
