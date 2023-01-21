@@ -1,0 +1,85 @@
+#Desenvolvimento 26
+#Autor: Alex Barros
+#Data: 20/01/2023
+
+
+// Código Java para serialização e desserialização
+// de um objeto Java
+import java.io.*;
+
+class Exem implements java.io.Serializable
+{
+    public int a;
+    public String b;
+
+    // Default constructor
+    public Exem(int a, String b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+
+}
+
+class Teste
+{
+    public static void main(String[] args)
+    {
+        Exem object = new Exem(1, "adorotecnologia");
+        String arq = "arq.ser";
+
+        // Serialização
+        try
+        {
+            //Salvando o objeto em um arquivo
+            FileOutputStream file = new FileOutputStream(arq);
+            ObjectOutputStream out = new ObjectOutputStream(file);
+
+            // Método para serialização de objeto
+            out.writeObject(object);
+
+            out.close();
+            file.close();
+
+            System.out.println("O objeto foi serializado");
+
+        }
+
+        catch(IOException ex)
+        {
+            System.out.println("IOException está capturado");
+        }
+
+
+        Exem objeto1 = null;
+
+        // Deserialização
+        try
+        {
+            // Lendo o objeto de um arquivo
+            FileInputStream file = new FileInputStream(arq);
+            ObjectInputStream in = new ObjectInputStream(file);
+
+            // Método para desserialização de objeto
+            objeto1 = (Exem)in.readObject();
+
+            in.close();
+            file.close();
+
+            System.out.println("O objeto foi desserializado ");
+            System.out.println("a = " + objeto1.a);
+            System.out.println("b = " + objeto1.b);
+        }
+
+        catch(IOException ex)
+        {
+            System.out.println("IOException está capturado");
+        }
+
+        catch(ClassNotFoundException ex)
+        {
+            System.out.println("ClassNotFoundException está capturado");
+        }
+
+    }
+}
