@@ -1,0 +1,34 @@
+#Desenvolvimento 28
+#Autor: Alex Barros
+#Data: 24/01/2023
+
+Sobre os padrões de projetos estudados, escolha um padrão para cada uma das 
+seguintes categorias e explique o seu funcionamento. As categorias são:
+
+creational patterns;
+structural patterns;
+behavioural patterns.
+
+Creational patterns:
+	Abstract factory - É um padrão de projeto criacional que facilita a composição 
+de famílias de objetos referenciados ou subordinados por intermédio de uma única interface 
+abstrata e sem a necessidade de esmiuçar a classe concreta. Para isso acrescentamos novos 
+tipos derivados sem modificar o código que usa a classe de referência.
+
+Structure patterns:
+	Bridge - é um padrão de projeto estrutural a qual admite que seja separado uma 
+classe grande ou um conjunto de classes essencialmente associadas em duas hierarquias 
+desagregadas, abstração e implementação, e podem ser criadas autonomamente umas das outras. 
+As classes que deram origem apontam um objeto da nova hierarquia, ao contrário de ter todos 
+os seus estados e comportamentos em uma classe.
+
+Behavioural patterns:
+	Memento - é um padrão de projeto comportamental que admite resgatar e 
+restabelecer a condição anterior de um objeto sem transparecer os pormenores de sua 
+efetuação. Ao passo que o aplicativo está avançando, é normal pretender recuperar os 
+pontos de verificação em seu aplicativo e restabelecer esses pontos de verificação depois. 
+O propósito do padrão Memento é, sem romper o encapsulamento, conquistar e exibir 
+a condição interior de um objeto para que o objeto deva ser recuperado a condição 
+decorrente.
+
+	
